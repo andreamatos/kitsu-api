@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: kitsu-api
+    
+kitsu-api:
+  client:
+    service-url: https://kitsu.io
+    service-endpoint: /api/edge/anime
+    service-name: kitsu

@@ -1,0 +1,15 @@
+/home/andre.matos/projetos/pessoal/kitsu-api/src/main/java/com/project/kitsuapi/rest/AnimeController.java
+/home/andre.matos/projetos/pessoal/kitsu-api/src/main/java/com/project/kitsuapi/enums/SizeEnum.java
+/home/andre.matos/projetos/pessoal/kitsu-api/src/main/java/com/project/kitsuapi/client/KitsuFeignClient.java
+/home/andre.matos/projetos/pessoal/kitsu-api/src/main/java/com/project/kitsuapi/config/FeignConfiguration.java
+/home/andre.matos/projetos/pessoal/kitsu-api/src/main/java/com/project/kitsuapi/response/AnimeResponse.java
+/home/andre.matos/projetos/pessoal/kitsu-api/src/main/java/com/project/kitsuapi/enums/FaixaEtariaEnum.java
+/home/andre.matos/projetos/pessoal/kitsu-api/src/main/java/com/project/kitsuapi/enums/SubTipoEnum.java
+/home/andre.matos/projetos/pessoal/kitsu-api/src/main/java/com/project/kitsuapi/enums/StatusEnum.java
+/home/andre.matos/projetos/pessoal/kitsu-api/src/main/java/com/project/kitsuapi/kitsuApiApplication.java
+/home/andre.matos/projetos/pessoal/kitsu-api/src/main/java/com/project/kitsuapi/service/impl/AnimeServiceImpl.java
+/home/andre.matos/projetos/pessoal/kitsu-api/src/main/java/com/project/kitsuapi/config/AppConfiguration.java
+/home/andre.matos/projetos/pessoal/kitsu-api/src/main/java/com/project/kitsuapi/auth/AuthConfigProperties.java
+/home/andre.matos/projetos/pessoal/kitsu-api/src/main/java/com/project/kitsuapi/enums/ShowTypeEnum.java
+/home/andre.matos/projetos/pessoal/kitsu-api/src/main/java/com/project/kitsuapi/service/AnimeService.java
+/home/andre.matos/projetos/pessoal/kitsu-api/src/main/java/com/project/kitsuapi/config/SwaggerConfiguration.java
