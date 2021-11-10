@@ -1,5 +1,6 @@
 package com.project.kitsuapi.service.impl;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -17,20 +18,22 @@ import com.project.kitsuapi.service.AnimeService;
 
 @Service
 public class AnimeServiceImpl implements AnimeService{
+	private HttpEntity<String> HTTP_REQUEST_ENTITY;
+	private final RestTemplate restTemplate;
 	
 	@Value("${kitsu-api.client.service-url}")
 	String kitsuUrl;
 	
 	@Value("${kitsu-api.client.service-endpoint}")
 	String animeEndPoint;
-	
-    private HttpEntity<String> HTTP_REQUEST_ENTITY;
-    private final RestTemplate restTemplate;
+    
+    private AnimeServiceImpl(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
     
 	@Override
 	public List<AnimeResponse> recuperarAnimesMaisPopulares() {
-		var headers = headers();
-        HTTP_REQUEST_ENTITY = new HttpEntity<>(headers);
+        HTTP_REQUEST_ENTITY = new HttpEntity<>(headers());
 		try {
 			return restTemplate
 					.exchange(
@@ -41,6 +44,7 @@ public class AnimeServiceImpl implements AnimeService{
 						.getData()
 						.stream()
 							.map(KitsuResponse.Data::getAttributes)
+							.sorted(Comparator.comparing(AnimeResponse::getPopularityRank))
 							.collect(Collectors.toList());
 		}catch (Exception e) {
 			throw e;
@@ -52,8 +56,4 @@ public class AnimeServiceImpl implements AnimeService{
         headers.set("Accept", "application/vnd.api+json");
         return headers;
 	}
-	
-    private AnimeServiceImpl(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
-    }
 }
