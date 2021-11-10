@@ -5,5 +5,6 @@ spring:
 kitsu-api:
   client:
     service-url: https://kitsu.io
-    service-endpoint: /api/edge/anime
+    service-anime-endpoint: /api/edge/anime
+    service-manga-endpoint: /api/edge/manga
     service-name: kitsu
