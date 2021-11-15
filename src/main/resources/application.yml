@@ -6,5 +6,6 @@ kitsu-api:
   client:
     service-url: https://kitsu.io
     service-anime-endpoint: /api/edge/anime
+    service-anime-filter: /api/edge/episodes
     service-manga-endpoint: /api/edge/manga
     service-name: kitsu
