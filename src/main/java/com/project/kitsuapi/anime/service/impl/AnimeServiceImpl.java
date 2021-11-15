@@ -2,7 +2,6 @@ package com.project.kitsuapi.anime.service.impl;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -65,19 +64,18 @@ public class AnimeServiceImpl implements AnimeService{
 					.getData()
 					.stream()
 						.map(KitsuResponse.Data::getAttributes)
-						.sorted(Comparator.comparing(AnimeResponse::getPopularityRank))
 						.collect(Collectors.toList());
 	}
 	
 	@Override
 	public EpisodioResponse recuperarEpisodioAnimesPorId(Integer id) {
         HTTP_REQUEST_ENTITY = new HttpEntity<>(kitsuApiUtil.headers());
-			return restTemplate
-					.exchange(
-						kitsuUrl + animeFilterEndpoint + "/" + id, 
-						HttpMethod.GET, HTTP_REQUEST_ENTITY, 
-						EpisodioResponse.class)
-					.getBody();
+		return restTemplate
+				.exchange(
+					kitsuUrl + animeFilterEndpoint + "/" + id, 
+					HttpMethod.GET, HTTP_REQUEST_ENTITY, 
+					EpisodioResponse.class)
+				.getBody();
 	}
 	
 }

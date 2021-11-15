@@ -8,5 +8,5 @@ import lombok.Data;
 
 @Data
 public class MangaTrendingResponse {
-    List<KitsuResponse.Data<MangaResponse>> data;
+    List<KitsuResponse.Data<Manga>> data;
 }

@@ -31,4 +31,8 @@ public class kitsuApiUtil {
 		
 		return base;
 	}
+	
+	public static String montarUrlManga(String kitsuUrl, String animeEndPoint, Integer id) {
+		return String.format(kitsuUrl + animeEndPoint + "/" + id);
+	}
 }
