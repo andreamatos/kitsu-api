@@ -21,14 +21,14 @@ public class AnimeController {
 	private final AnimeService animeService;
 	
 	@ApiParam(name = "Authorization", type = "header")
-    @ApiOperation("Retorna os animes mais populares.")
+    	@ApiOperation("Retorna os animes mais populares.")
 	@GetMapping(value = "/maisPopulares", produces = APPLICATION_JSON_VALUE)
 	public List<AnimeResponse> recuperarAnimesPopulares() {
 		return animeService.recuperarAnimesMaisPopulares();
 	}
 	
 	@ApiParam(name = "Authorization", type = "header")
-    @ApiOperation("Retorna informacoes do anime.")
+    	@ApiOperation("Retorna informacoes do anime.")
 	@GetMapping(value = "/informacoes", produces = APPLICATION_JSON_VALUE)
 	public List<AnimeResponse> recuperarInformacoesAnimes(
 		@RequestParam(name = "id", required = false) Integer id,
@@ -37,7 +37,7 @@ public class AnimeController {
 	}
 	
 	@ApiParam(name = "Authorization", type = "header")
-    @ApiOperation("Retorna animes por filtro.")
+    	@ApiOperation("Retorna animes por filtro.")
 	@GetMapping(value = "/episodio", produces = APPLICATION_JSON_VALUE)
 	public EpisodioResponse recuperarAnimesPorId(
 		@RequestParam(name = "id", required = true) Integer id){
@@ -58,14 +58,14 @@ public class MangaController {
 	private final MangaService mangaService;
 	
 	@ApiParam(name = "Authorization", type = "header")
-    @ApiOperation("Retorna os mangas mais populares.")
+    	@ApiOperation("Retorna os mangas mais populares.")
 	@GetMapping(value = "/maisPopulares", produces = APPLICATION_JSON_VALUE)
 	public List<Manga> recuperarMangasPopulares() {
 		return mangaService.recuperarMangasMaisPopulares();
 	}
 	
 	@ApiParam(name = "Authorization", type = "header")
-    @ApiOperation("Retorna informacoes do manga.")
+    	@ApiOperation("Retorna informacoes do manga.")
 	@GetMapping(value = "/informacoes", produces = APPLICATION_JSON_VALUE)
 	public InformacoesMangaResponse recuperarInformacoesManga(
 		@RequestParam(name = "id", required = true) Integer id) {
@@ -73,7 +73,7 @@ public class MangaController {
 	}
 	
 	@ApiParam(name = "Authorization", type = "header")
-    @ApiOperation("Retorna mangas por filtro.")
+    	@ApiOperation("Retorna mangas por filtro.")
 	@GetMapping(value = "/capitulo", produces = APPLICATION_JSON_VALUE)
 	public MangaResponse recuperarMangaPorFiltro(
 		@RequestParam(name = "id", required = true) Integer id) {
