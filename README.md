@@ -1,6 +1,6 @@
 <p align=center>
   <strong>Kitsu API</strong> <br>
-  <img src="https://initiate.alphacoders.com/images/653/cropped-150-150-653529.jpg?3539" />
+  <img src="https://initiate.alphacoders.com/images/653/cropped-1920-1200-653529.jpg?4405" />
 </p>
 
 ## Resumo do Projeto
