@@ -46,7 +46,7 @@ public class AnimeController {
 }
 ```
 
-### Especificações de uso do controller de mangas
+## Especificações de uso do controller de mangas
 
 ```java
 @RestController
