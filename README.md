@@ -82,7 +82,7 @@ public class MangaController {
 }
 ```
 
-### Especificação técnica da API.
+## Especificação técnica da API.
 
 A API foi construída com Java 11, SpringBoot, Maven e para comunicação das APIS utilizamos o RestTemplate do springBoot.
 
