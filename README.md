@@ -7,9 +7,9 @@
 
 ### Objetivo da API
 
-Recuperar informações dos mais diversos animes e mangas
+Manga and anime information that can retrieve from kitsu-api.
 
-## Especificações de uso do controller de animes
+## Anime Controller.
 
 ```java
 @RestController
@@ -46,7 +46,7 @@ public class AnimeController {
 }
 ```
 
-## Especificações de uso do controller de mangas
+## Manga Controller.
 
 ```java
 @RestController
@@ -82,13 +82,13 @@ public class MangaController {
 }
 ```
 
-## Especificação técnica da API.
+## API technical specification.
 
-A API foi construída com Java 11, SpringBoot, Maven e para comunicação das APIS utilizamos o RestTemplate do springBoot.
+This API was built on Java 11, SgringBoot, Maven and to comunicate using RestTemplate.
 
 Swagger -> http://localhost:8080/swagger-ui/
 
-### Referencias para construção da API.
+### Reference.
 
 kitsu-sdk-starter
 https://github.com/AppLoidx/kitsu-sdk-starter/
