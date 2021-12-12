@@ -3,9 +3,7 @@
   <img src="https://images7.alphacoders.com/101/1012056.jpg" />
 </p>
 
-## Resumo do Projeto
-
-### Objetivo da API
+## API Objective
 
 Manga and anime information that can retrieve from kitsu-api.
 
