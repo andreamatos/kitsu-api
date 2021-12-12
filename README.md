@@ -86,7 +86,7 @@ This API was built on Java 11, SgringBoot, Maven and to comunicate using RestTem
 
 Swagger -> http://localhost:8080/swagger-ui/
 
-### Reference.
+## Reference.
 
 kitsu-sdk-starter
 https://github.com/AppLoidx/kitsu-sdk-starter/
