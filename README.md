@@ -1,5 +1,4 @@
-# Kitsu API
-
+## Kitsu API
 <p align=center>
   <img src="https://github.com/andreamatos/kitsu-api/blob/main/slime.jpeg" />
 </p>
