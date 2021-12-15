@@ -1,5 +1,6 @@
+# Kitsu API
+
 <p align=center>
-  <strong>Kitsu API</strong> <br>
   <img src="https://github.com/andreamatos/kitsu-api/blob/main/slime.jpeg" />
 </p>
 
@@ -7,7 +8,7 @@
 
 Manga and anime information that can retrieve from kitsu-api.
 
-## Anime Controller.
+## Anime Controller
 
 ```java
 @RestController
@@ -44,7 +45,7 @@ public class AnimeController {
 }
 ```
 
-## Manga Controller.
+## Manga Controller
 
 ```java
 @RestController
@@ -80,13 +81,13 @@ public class MangaController {
 }
 ```
 
-## API technical specification.
+## API technical specification
 
 This API was built in Java 11, SgringBoot, Maven and comunication with RestTemplate.
 
 Swagger -> http://localhost:8080/swagger-ui/
 
-## Reference.
+## Reference
 
 kitsu-sdk-starter
 https://github.com/AppLoidx/kitsu-sdk-starter/
