@@ -82,7 +82,7 @@ public class MangaController {
 
 ## API technical specification.
 
-This API was built in Java 11, SgringBoot, Maven and to comunicate using RestTemplate.
+This API was built in Java 11, SgringBoot, Maven and comunication with RestTemplate.
 
 Swagger -> http://localhost:8080/swagger-ui/
 
