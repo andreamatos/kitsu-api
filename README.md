@@ -1,6 +1,6 @@
 <p align=center>
   <strong>Kitsu API</strong> <br>
-  <img src="https://images7.alphacoders.com/101/1012056.jpg" />
+  <img src="https://github.com/andreamatos/kitsu-api/blob/main/slime.jpeg" />
 </p>
 
 ## API Objective.
